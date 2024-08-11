@@ -1,1 +1,5 @@
-﻿# sfdchub
+﻿# It hasn't been done yet
+It's easier to ask questions than to answer them. I'm in the process of...
+# Это еще не сделано
+Легче задавать вопросы, чем отвечать на них. Я в процессе...
+## fdchub 
