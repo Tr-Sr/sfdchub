@@ -1,0 +1,12 @@
+Senor frontend developer course
+Starting structure requirements:
+(Требования к стартовой структуре)
+
+  Webstorm
+  Webpack (imports-exports)
+  Babel
+  Scss
+  Eslint
+  Git
+  GitHUB
+  Bash (?)

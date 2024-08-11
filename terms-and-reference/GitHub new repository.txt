@@ -1,0 +1,60 @@
+Разберем каждую часть страницы, которую вы получаете сразу после создания нового репозитория на GitHub:
+
+1. Quick setup — if you’ve done this kind of thing before
+Эта секция предназначена для тех, кто уже знаком с Git и GitHub. Она предлагает несколько вариантов для начала работы с новым репозиторием.
+
+2. URL репозитория (используются реальные данные для этого репозитория sfdchub.git на моем аккаунте Tr-Sr)
+Code
+    https://github.com/Tr-Sr/sfdchub.git
+
+Это URL вашего нового репозитория на GitHub. Вы будете использовать его для подключения вашего локального репозитория к удаленному репозиторию на GitHub.
+
+3. Рекомендации по созданию файлов
+
+Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+GitHub рекомендует вам создать или загрузить файлы в ваш репозиторий. Рекомендуется включить следующие файлы:
+
+README: Файл, который содержит информацию о вашем проекте, его назначении и инструкции по использованию.
+LICENSE: Файл, который определяет условия лицензирования вашего проекта.
+.gitignore: Файл, который указывает Git, какие файлы или папки следует игнорировать (например, временные файлы, скомпилированные файлы и т.д.).
+
+4. Создание нового репозитория на командной строке
+…or create a new repository on the command line
+Code
+
+    echo "# sfdchub" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/Tr-Sr/sfdchub.git
+    git push -u origin main
+
+    Разбор:
+Эти команды показывают, как создать новый репозиторий на вашем локальном компьютере и связать его с удаленным репозиторием на GitHub.
+
+echo "# sfdchub" >> README.md: Создает файл README.md и добавляет в него заголовок # sfdchub.
+git init: Инициализирует новый локальный репозиторий Git в текущей директории.
+git add README.md: Добавляет файл README.md в индекс (staging area), чтобы он был готов к коммиту.
+git commit -m "first commit": Создает коммит с сообщением "first commit", фиксируя изменения в локальном репозитории.
+git branch -M main: Переименовывает текущую ветку в main. Это важно, так как GitHub по умолчанию использует main как основную ветку.
+git remote add origin https://github.com/Tr-Sr/sfdchub.git: Добавляет удаленный репозиторий с именем origin, указывая на URL вашего репозитория на GitHub.
+git push -u origin main: Отправляет (пушит) ваши изменения в удаленный репозиторий на GitHub и устанавливает origin/main как upstream-ветку для вашей локальной ветки main.
+
+5. Пуш существующего репозитория с командной строки
+…or push an existing repository from the command line
+Code
+
+    git remote add origin https://github.com/Tr-Sr/sfdchub.git
+    git branch -M main
+    git push -u origin main
+
+    Разбор:
+Эти команды предназначены для тех, кто уже имеет существующий локальный репозиторий и хочет связать его с новым репозиторием на GitHub.
+
+git remote add origin https://github.com/Tr-Sr/sfdchub.git: Добавляет удаленный репозиторий с именем origin.
+git branch -M main: Переименовывает текущую ветку в main.
+git push -u origin main: Отправляет изменения в удаленный репозиторий на GitHub и устанавливает origin/main как upstream-ветку.
+
+    Заключение
+Эта страница предоставляет вам инструкции по созданию нового репозитория на GitHub и связыванию его с вашим локальным репозиторием. Вы можете выбрать один из предложенных способов в зависимости от того, создаете ли вы новый проект или пушите существующий.
